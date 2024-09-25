@@ -13,25 +13,34 @@
             <h1>GreenSync</h1>
         </div>
         <nav class="nav">
-            <a href="#home">Home</a>
-            <a href="#subscriptions">Suscripciones</a>
-            <a href="#about">About us</a>
-            <a href="#contact">Contactanos</a>
+            <a href="#home" data-translatable>Home // Inicio</a>
+            <a href="#subscriptions" data-translatable>Subscriptions // Suscripciones</a>
+            <a href="#about" data-translatable>About us // Acerca de nosotros</a>
+            <a href="#contact" data-translatable>Contact us // Contáctanos</a>
         </nav>
         <div class="buttons">
-            <button class="login">Login In</button>
-            <button class="join">Join Us</button>
+            <button class="login" data-translatable>Login In // Iniciar Sessión</button>
+            <button class="join" data-translatable>Join Us // Únete</button>
         </div>
+        <div style="height: 150px" class="buttons">
+            <button onclick="i18next.changeLanguage('en')" style="padding: 5px 10px;">
+              en
+            </button>
+            <button onclick="i18next.changeLanguage('es')" style="padding: 5px 10px;" >
+              es
+            </button>
+          </div>
+          
     </header>
 
     <main>
         <section id="home" class="main-content">
             <div class="text-content">
                 <h2>EcoRoute</h2>
-                <p>EcoRoute es una plataforma diseñada para empresas que buscan hacer más sostenibles y eficientes sus cadenas de suministro. Con EcoRoute, puedes evaluar a tus proveedores, gestionar el impacto ambiental de tus operaciones y optimizar la logística para reducir costos y emisiones. ¡Empieza a transformar tu cadena de suministro con prácticas más responsables y eficientes!</p>
+                <p data-translatable >EcoRoute is a platform designed for companies looking to make their supply chains more sustainable and efficient. With EcoRoute, you can evaluate your suppliers, manage the environmental impact of your operations, and optimize logistics to reduce costs and emissions. Start transforming your supply chain with more responsible and efficient practices! // EcoRoute es una plataforma diseñada para empresas que buscan hacer más sostenibles y eficientes sus cadenas de suministro. Con EcoRoute, puedes evaluar a tus proveedores, gestionar el impacto ambiental de tus operaciones y optimizar la logística para reducir costos y emisiones. ¡Empieza a transformar tu cadena de suministro con prácticas más responsables y eficientes!</p>
                 <div class="cta-buttons">
-                    <button class="get-started">GET STARTED</button>
-                    <button class="learn-more">LEARN MORE</button>
+                    <button data-translatable class="get-started">GET STARTED // EMPIEZA AHORA</button>
+                    <button data-translatable class="learn-more">LEARN MORE // APRENDE MÁS SOBRE NOSOTROS</button>
                 </div>
             </div>
             <div class="image-content">
@@ -41,8 +50,8 @@
 
         <section id="subscriptions" class="subscriptions">
             <div class="text-content">
-                <h2>Suscripciones Mensuales</h2>
-                <p>En EcoRoute nos basamos en un sistema de modelos de suscripciones mensuales, para que los usuarios puedan elegir el plan según mejor esté en sus planes o le parezca el más adecuado para su uso empresarial. A continuación les presentamos los tres planes de suscripción mensual que le ofrecemos.</p>
+                <h2 data-translatable>Anual subscriptions // Suscripciones Mensuales</h2>
+                <p data-translatable>At EcoRoute we rely on a system of monthly subscription models, so that users can choose the plan that best fits their plans or seems most suitable for their business use. Below we present the three monthly subscription plans that we offer. // En EcoRoute nos basamos en un sistema de modelos de suscripciones mensuales, para que los usuarios puedan elegir el plan según mejor esté en sus planes o le parezca el más adecuado para su uso empresarial. A continuación les presentamos los tres planes de suscripción mensual que le ofrecemos.</p>
             </div>
         
             <div class="image-content2">
@@ -51,65 +60,88 @@
         
             <div class="plans">
                 <div class="plan">
-                    <h3>Plan Básico</h3>
-                    <p>Empieza a trabajar con este plan que te ayudará en la evaluación de proveedores y gestión básica de la cadena de suministro. Tendrás la oportunidad de adquirir 10 días gratuitos para entenderlo.</p>
+                    <h3 data-translatable>Basic Plan // Plan Básico</h3>
+                    <p data-translatable>Get started with this plan that will help you evaluate suppliers and manage your supply chain. You will have the opportunity to get 10 free days to understand it. // Empieza a trabajar con este plan que te ayudará en la evaluación de proveedores y gestión básica de la cadena de suministro. Tendrás la oportunidad de adquirir 10 días gratuitos para entenderlo.</p>
                 </div>
                 <div class="plan">
-                    <h3>Plan Profesional</h3>
-                    <p>No solo iniciarás teniendo las ventajas del plan básico, sino que también tendrás acceso al análisis de impacto ambiental y optimización de procesos. Renueva mensualmente.</p>
+                    <h3 data-translatable>Professional Plan // Plan Profesional</h3>
+                    <p data-translatable>Not only will you start off with the benefits of the basic plan, but you will also have access to environmental impact analysis and process optimization. Renew monthly. // No solo iniciarás teniendo las ventajas del plan básico, sino que también tendrás acceso al análisis de impacto ambiental y optimización de procesos. Renueva mensualmente.</p>
                 </div>
                 <div class="plan">
-                    <h3>Plan Corporativo</h3>
-                    <p>Paquete completo que contiene todo lo mencionado en los planes profesional y básico. Incluye la integración propia con los sistemas existentes y una consultoría especializada para tener el control y todo en orden en tu empresa.</p>
+                    <h3 data-translatable>Corporate Plan // Plan Corporativo</h3>
+                    <p data-translatable>Complete package containing everything mentioned in the professional and basic plans. Includes integration with existing systems and specialized consulting to keep your company in control and in order. // Paquete completo que contiene todo lo mencionado en los planes profesional y básico. Incluye la integración propia con los sistemas existentes y una consultoría especializada para tener el control y todo en orden en tu empresa.</p>
                 </div>
             </div>
         </section>
 
         <section id="about" class="about-us">
-            <h2>About us</h2>
-            <p>Como miembros de la empresa GreenSync, es importante saber quienes son los autores de este proyecto. Es por ello que a continuación se mostrarán los autores de EcoRoute.</p>
+            <h2 data-translatable>About us // Acerca de nosotros</h2>
+            <p data-translatable>As members of the GreenSync company, it is important to know who the authors of this project are. That is why the authors of EcoRoute will be listed below. // Como miembros de la empresa GreenSync, es importante saber quienes son los autores de este proyecto. Es por ello que a continuación se mostrarán los autores de EcoRoute.</p>
             <div class="team">
                 <div class="team-member">
                     <img src="imgs/integrante-barturen.png" alt="Alejandro Barturen">
                     <h3>Alejandro Barturen</h3>
-                    <p>Estudiante de Ingeniería de Software. 5to Ciclo en la Universidad Peruana de Ciencias Aplicadas. Edad: 20 años. Miembro de EcoRoute</p>
+                    <p data-translatable>Software Engineering student. 5th Cycle at the Peruvian University of Applied Sciences. Age: 20 years old. Member of EcoRoute // Estudiante de Ingeniería de Software. 5to Ciclo en la Universidad Peruana de Ciencias Aplicadas. Edad: 20 años. Miembro de EcoRoute</p>
                 </div>
                 <div class="team-member">
                     <img src="imgs/integrante-martinez.jpg" alt="Piero Martinez">
                     <h3>Piero Martinez</h3>
-                    <p>Estudiante de Ingeniería de Software. 5to Ciclo en la Universidad Peruana de Ciencias Aplicadas. Edad: 22 años. Miembro de EcoRoute</p>
+                    <p data-translatable>Software Engineering student. 5th Cycle at the Peruvian University of Applied Sciences. Age: 22 years old. Member of EcoRoute // Estudiante de Ingeniería de Software. 5to Ciclo en la Universidad Peruana de Ciencias Aplicadas. Edad: 22 años. Miembro de EcoRoute</p>
                 </div>
                 <div class="team-member">
                     <img src="imgs/integrante-pachas.jpg" alt="Alejandro Pachas">
                     <h3>Alejandro Pachas</h3>
-                    <p>Estudiante de Ingeniería de Software. 5to Ciclo en la Universidad Peruana de Ciencias Aplicadas. Edad: 21 años. Miembro de EcoRoute</p>
+                    <p data-translatable>Software Engineering student. 5th Cycle at the Peruvian University of Applied Sciences. Age: 22 years old. Member of EcoRoute // Estudiante de Ingeniería de Software. 5to Ciclo en la Universidad Peruana de Ciencias Aplicadas. Edad: 22 años. Miembro de EcoRoute</p>
                 </div>
                 <div class="team-member">
                     <img src="imgs/integrante_salvador.png" alt="Rodrigo Salvador">
                     <h3>Rodrigo Salvador</h3>
-                    <p>Estudiante de Ingeniería de Software. 5to Ciclo en la Universidad Peruana de Ciencias Aplicadas. Edad: 19 años. Miembro de EcoRoute</p>
+                    <p data-translatable>Software Engineering student. 5th Cycle at the Peruvian University of Applied Sciences. Age: 19 years old. Member of EcoRoute // Estudiante de Ingeniería de Software. 5to Ciclo en la Universidad Peruana de Ciencias Aplicadas. Edad: 19 años. Miembro de EcoRoute</p>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact">
-            <h2>Contactanos</h2>
-            <p>Si tienes alguna duda no dudes en dejar tu información para contactarte con nosotros, no esperes más para ser parte del cambio en el medioambiente.</p>
+            <h2 data-translatable>Contact Us // Contactanos</h2>
+            <p data-translatable>If you have any questions, please leave your information so we can contact you. Don't wait any longer to be part of the change in the environment. // Si tienes alguna duda no dudes en dejar tu información para contactarte con nosotros, no esperes más para ser parte del cambio en el medioambiente.</p>
             <form>
                 <input type="email" placeholder="Email address">
                 <input type="text" placeholder="Full name">
-                <button type="submit">Send</button>
+                <button type="submit" data-translatable>Enviar // Send</button>
             </form>
         </section>
     </main>
 
     <footer class="footer">
-        <p>San Isidro, Lima, Perú<br>&copy; 2024 GreenSync. Todos los derechos reservados.</p>
+        <p>San Isidro, Lima, Perú<br>&copy; 2024 GreenSync.<span data-translatable>All rights reserved // Todos los derechos reservados.</span></p>
         <nav class="footer-nav">
-            <a href="#">Home</a>
-            <a href="#">Suscripciones</a>
-            <a href="#">About us</a>
-            <a href="#">Contactanos</a>
+            <a href="#home" data-translatable>Home // Inicio</a>
+            <a href="#subscriptions" data-translatable>Subscriptions // Suscripciones</a>
+            <a href="#about" data-translatable>About us // Sobre nosotros</a>
+            <a href="#contact" data-translatable>Contact us // Contáctanos</a>
     </footer>
 </body>
 </html>
+<script src="./dist/dom-i18n.min.js"></script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var i18n = domI18n({
+        selector: '[data-translatable]',
+        separator: ' // ',
+        languages: ['en', 'es'],
+        defaultLanguage: 'en'
+    });
+
+    // Add event listeners to language change buttons
+    document.querySelector('button[onclick="i18next.changeLanguage(\'en\')"]').addEventListener('click', function() {
+        i18n.changeLanguage('en');
+    });
+
+    document.querySelector('button[onclick="i18next.changeLanguage(\'es\')"]').addEventListener('click', function() {
+        i18n.changeLanguage('es');
+    });
+});
+
+</script>
